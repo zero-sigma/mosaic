@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span>Components</span>
+      </div>
+      <div class="sidebar-content">
+        <div class="component-container">
+          <img src="images/page-title-block.jpg" id="threeColumnImageBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/horizontal-divider-block.jpg" id="horizontalDividerBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/block-spacer.jpg" id="blockSpacer" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/offer-card-block.jpg" id="offerCardBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/four-col-card-block.jpg" id="fourColumnCardBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/three-col-card-block.jpg" id="threeColumnCardBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/three-col-text-block.jpg" id="threeColumnTextBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/highlights-block.jpg" id="highlightsBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/whats-included-block.jpg" id="whatsIncludedBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/three-col-image-block.jpg" id="threeColumnImageBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/quote-block.jpg" id="twoColumnImageBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/recipe-card-block.jpg" id="twoColumnImageBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/cta-card-block.jpg" id="twoColumnImageBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+        <div class="component-container">
+          <img src="images/fulltext-img-overlay-block.jpg" id="twoColumnImageBlock" class="component" alt="">
+          <div class="add-component-btn">+</div>
+        </div>
+      </div>
+    </div>
+    <div class="render">
+      <div class="render-header">
+        <div class="btns-left">
+          <button class="btn text-btn secondary" id="toggle-sidebar">Hide Sidebar</button>
+          <button class="btn text-btn secondary" id="toggle-mobile">Mobile</button>
+          <button class="btn text-btn secondary" id="toggle-tablet">Tablet</button>
+          <button class="btn text-btn secondary" id="toggle-desktop">Desktop</button>
+          <button class="btn text-btn secondary" id="toggle-full-width">Full Width</button>
+        </div>
+        <div class="btns-right">
+          <button id="openModal" class="btn text-btn secondary">Remove All</button>
+          <button id="viewAllCodeBtn" class="btn text-btn primary">View Code</button>
+          <!-- <button class="btn text-btn primary">Copy HTML & CSS</button> -->
+        </div>
+      </div>
+      <iframe class="render-content" id="renderWindow"></iframe>
+    </div>
+  </div>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Are you sure?</h2>
+        <button id="closeModal" class="close-modal">&times;</button>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <p>Removing all elements from the interface is non-reversable. You will lose any existing work.</p>
+        <button  class="btn text-btn warning" id="confirm">Confirm</button>
+        <button  class="btn text-btn secondary" id="cancel">Cancel</button>
+      </div>
+    </div>
+</div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
